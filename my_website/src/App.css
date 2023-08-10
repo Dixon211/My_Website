@@ -1,0 +1,29 @@
+.main{
+
+
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: slategray;
+  width: 300px;
+  align-items: center;
+}
+
+.headshot{
+  border-radius: 250px;
+  width: 150px;
+
+}
+
+.description{
+  font-size: 20px;
+  font-family: Bookman, URW Bookman L, serif;
+  text-align: center;
+}
+
+.description_div{
+  text-align: center;
+}
