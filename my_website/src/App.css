@@ -1,5 +1,5 @@
 .main{
-
+display: flex;
 
 }
 
@@ -8,6 +8,7 @@
   flex-direction: column;
   height: 100vh;
   background-color: slategray;
+  background-size: cover;
   width: 300px;
   align-items: center;
 }
@@ -15,13 +16,21 @@
 .headshot{
   border-radius: 250px;
   width: 150px;
+  margin-top: 30px;
+}
 
+.name{
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .description{
   font-size: 20px;
   font-family: Bookman, URW Bookman L, serif;
   text-align: center;
+  margin-top: 10px;
+  display:inline-block;
 }
 
 .description_div{
