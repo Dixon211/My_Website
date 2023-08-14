@@ -1,3 +1,9 @@
+.vert_flexbox{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .main{
 display: flex;
 
@@ -9,7 +15,7 @@ display: flex;
   height: 100vh;
   background-color: slategray;
   background-size: cover;
-  width: 300px;
+  min-width: 300px;
   align-items: center;
 }
 
@@ -37,9 +43,14 @@ display: flex;
   text-align: center;
 }
 
+.mystack{
+  font-family: American Typewriter, serif ;
+}
+
 .sb_btn_div{
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
 
 .sb_btn{
@@ -74,8 +85,28 @@ display: flex;
 }
 
 .email{
-  padding-top: 13px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
   font-weight: bold;
+}
+
+.about_me_background{
+  background-color: rgb(233, 202, 130);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_me_header{
+  background-color:rgb(92, 148, 203);
+}
+
+.about_me_label{
+  font-size: 24px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.about_me_p{
+  font-size: 16px;
 }
