@@ -27,7 +27,6 @@ flex-direction: row;
 .right{
   width:100vw;
   overflow: auto;
-  height: 100%;
   padding-left: 300px;
 }
 
@@ -162,4 +161,27 @@ flex-direction: row;
 
 .skills_section{
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Project_Background{
+  background-color: rgb(233, 202, 130);
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh
+}
+
+.Current_Project_header{
+  background-color: rgb(172, 195, 217);
+}
+
+.Current_Project_label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+}
+
+.project_desc{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
