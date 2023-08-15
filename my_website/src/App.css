@@ -11,6 +11,9 @@ flex-direction: row;
 }
 
 .left{
+  position:fixed;
+  bottom: 0;
+  left:0;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -23,6 +26,9 @@ flex-direction: row;
 
 .right{
   width:100vw;
+  overflow: auto;
+  height: 100%;
+  padding-left: 300px;
 }
 
 .headshot{
@@ -120,9 +126,10 @@ flex-direction: row;
 
 .resume_background{
   background-color: rgb(233, 202, 130);
-  height: 100vh;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .resume_header_background{
@@ -139,4 +146,20 @@ flex-direction: row;
 .resume_body{
   direction: flex;
   flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.resume_sublabel{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.skills_list{
+  column-count: 2;
+  grid-column-start: -1;
+}
+
+.skills_section{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
