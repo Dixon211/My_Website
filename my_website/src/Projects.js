@@ -25,6 +25,12 @@ function Project_Section(){
             <div className='Current_project_div'>
                 <p className='project_desc'>{Project_info.stock_bot_desc_2}</p>
             </div>
+            <div className='Current_Project_header'>
+                <label className='Current_Project_label'>This Website</label>
+            </div>
+            <div className='Current_project_div'>
+                <p className='project_desc'>While this website isn’t the most polished, I feel proud that I was able to deploy it on my own and learn react from scratch and build upon my HTML, CSS, and JavaScript along with learning how to deploy it. It took about 2 weeks and tons of googling to get everything work to at least be presentable. I am going to keep working on it between projects so expect more polish as time passes.</p>
+            </div>
         </div>
     );
 }

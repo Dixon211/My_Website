@@ -2,9 +2,10 @@ import './App.css'
 import headshot from './headshot.jpg';
 import git_hub from './git_hub_logo.png';
 import linkedin from './linkedin.png';
+import React from 'react';
 
 
-function sidebar() {
+function sidebar({switchToResume, switchToAboutMe, switchToProjects}) {
     const openInNewTab = (url) => {
         window.open(url, "_blank", "noreferrer");
     };
@@ -17,9 +18,9 @@ return(
           <label className='mystack'>Python, Javascript, React, CSS, HTML</label>
           <br />
           <div className='sb_btn_div'>
-            <button className='sb_btn'>About Me</button>
-            <button className='sb_btn'>Resume</button>
-            <button className='sb_btn'>Projects</button>
+            <button className='sb_btn' onClick={switchToAboutMe}>About Me</button>
+            <button className='sb_btn' onClick={switchToResume}>Resume</button>
+            <button className='sb_btn'onClick={switchToProjects}>Projects</button>
           </div>
           <div className='socials'>
             <button className='social_btn'>
