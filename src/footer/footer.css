@@ -1,0 +1,22 @@
+.footer{
+    position: fixed;
+    background-color: #8D8741;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+}
+
+.ftext-holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.fbtn{
+    background-color: transparent;
+    width: 150px;
+    border: none;
+}
+
+.fbtn:active{
+    transform: translateY(2px);
+}

@@ -1,0 +1,77 @@
+
+.container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: auto;
+}
+
+.detailsplate{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.text{
+    margin: auto;
+    width: inherit;
+    width: 600px;
+    text-align: center;
+}
+
+.largefont{
+    display: block;
+    font-size: 60px;
+    white-space: nowrap;
+    text-overflow: hidden;
+    overflow: hidden;
+    font-family: "Philospher";
+}
+
+.smalltext{
+    font-size: 24px;
+    display: block;
+    white-space: nowrap;
+    font-family: "Philospher";
+   
+}
+
+.imagesection {
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mountains{
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+@media (max-width: 1300px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .detailsplate{
+        width: 100vw;
+    }
+    .largefont{
+        text-align: center;
+    }
+    .smalltext{
+        text-align: center;
+    }
+    .imagesection{
+        width: 100vw;
+    }
+    }
+

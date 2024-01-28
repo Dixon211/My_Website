@@ -1,0 +1,41 @@
+.workingsection {
+    margin-top: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.worktitle {
+    font-size: 48px;
+    text-align: center;
+}
+
+.descriptionplate {
+    display: flex;
+    flex-direction: row;
+}
+
+.descriptionpara {
+    display: flex;
+    flex-direction: column;
+    width:67vw;
+    margin-left: 10px;
+}
+
+.descriptiontext {
+    font-size: 24px;
+}
+
+.imageplate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    margin-right: 20px;
+}
+
+.imglabel {
+    font-size: 18px;
+}
