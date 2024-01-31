@@ -4,7 +4,6 @@ import AboutPage from "./aboutPage/aboutPage";
 import Projects from './projects/projectspage';
 import Workingon from './workingon/workingon';
 import HangingSidebar from './hangingsidebar/hangingsidebar';
-import { WindowSizeProvider } from './functions/WindowContext/WindowContext';
 import { useState, useEffect, createContext, useContext } from 'react';
 
 
@@ -28,7 +27,6 @@ function App() {
 
   //html/css
   return (
-  <WindowSizeProvider>
     <body>
       <HangingSidebar/>
       <Header 
@@ -42,7 +40,6 @@ function App() {
       </div>
       
     </body>
-  </WindowSizeProvider>
 
   
  

@@ -1,8 +1,8 @@
 import { useLayoutEffect, useState } from "react";
 
-const useWindowSize = () => {
+export function useWindowSize()  {
     //create state with variables
-    const [windowSize, setWindowSize] = useState({width: 0, height: 0});
+    const [windowSize, setWindowSize] = useState({width: window.innerWidth, height: window.innerHeight});
 
     //define function to swap state
     const handleSize = () => {
@@ -20,7 +20,9 @@ const useWindowSize = () => {
         return () => window.removeEventListener("resize", handleSize);
     }, [])
 
-    return windowSize
+    return ( windowSize
+    );    
+
 }
 
 export default useWindowSize;
