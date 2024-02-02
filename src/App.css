@@ -1,16 +1,18 @@
 body{
-  background: url("../public/displaywood.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: cornsilk;
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 
 .Section {
-  margin-top: 100px;
   width: 100vw;
   height: auto;
 }

@@ -1,5 +1,33 @@
 #headerframe {
-    background-color: black;
+    background-color: #2C3531;
     height: 10vh;
-    width: 100vw;
+}
+
+
+
+#sectionplate {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.sectionbutton {
+    height:100%;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.sectionbutton:active {
+    transform: translateY(2px);
+}
+
+.hbtxt {
+    color: #d1e8e2;
+    font-size: 4vh;
+    text-wrap: nowrap;
 }
