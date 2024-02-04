@@ -4,7 +4,7 @@ import AboutPage from "./aboutPage/aboutPage";
 import Projects from './projects/projectspage';
 import Workingon from './workingon/workingon';
 import HangingSidebar from './hangingsidebar/hangingsidebar';
-import { useState, useEffect, createContext, useContext } from 'react';
+import { useState} from 'react';
 
 
 //Main

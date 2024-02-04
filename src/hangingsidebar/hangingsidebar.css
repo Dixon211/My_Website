@@ -1,6 +1,6 @@
 #sbcont {
     position: absolute;
-    height:35vh;
+    height:35%;
     width: 2vw;
     right: 0;
     top: 25%;
@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 40vh;
 }
 
 #handletxt {
@@ -44,7 +45,7 @@
 #drawer {
     width: 0%;
     height: 100%;
-    background-color: #659DBD;
+    background-color: #2C3531;
     display: flex;
     flex-direction: column;
     justify-content: center;
