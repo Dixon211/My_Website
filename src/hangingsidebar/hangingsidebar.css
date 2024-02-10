@@ -80,3 +80,9 @@
     height: 100%;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+    #sbcont {
+        display: none!important;
+    }
+}

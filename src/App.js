@@ -4,13 +4,16 @@ import AboutPage from "./aboutPage/aboutPage";
 import Projects from './projects/projectspage';
 import Workingon from './workingon/workingon';
 import HangingSidebar from './hangingsidebar/hangingsidebar';
+import Mobilemenu from './mobilemenu/mobilemenu';
 import { useState} from 'react';
 
 
 //Main
 function App() {
-  //global variables
+  //states
   const [ActivePanel, setCurrentSection] = useState(<AboutPage />);
+  const [mmexpand, setMmExpand] = useState(false);
+ 
 
   //functions
   const handleSwitchToAboutPage = () => {
@@ -25,6 +28,10 @@ function App() {
     setCurrentSection(<Workingon/>)
   };
 
+  const toggleMmExpand = () => {
+    setMmExpand(!mmexpand);
+  };
+
   //html/css
   return (
     <div>
@@ -33,7 +40,9 @@ function App() {
     </head>
     <body>
       <HangingSidebar/>
+      <Mobilemenu mmexpand={mmexpand}/>
       <Header 
+        toggleMmExpand = {toggleMmExpand}
         switchToAboutPage={handleSwitchToAboutPage}
         switchtoProjects={handleSwitchToProjects}
         switchtoWorkingon={handleSwitchtoWork}

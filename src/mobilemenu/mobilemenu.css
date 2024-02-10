@@ -1,0 +1,23 @@
+#mobilemenu.closed {
+    display: none!important;
+}
+
+
+
+
+@media (max-width: 768px) {
+#mobilemenu.open {
+    background-color: gray;
+    opacity: 50%;
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    display: block;
+}
+
+#mmheader {
+    height: 10vh;
+    background-color: red;
+}
+}

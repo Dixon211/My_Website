@@ -1,13 +1,11 @@
 import "./header.css";
 
-function Header({switchToAboutPage, switchtoProjects, switchtoWorkingon}) {
-
-
+function Header({switchToAboutPage, switchtoProjects, switchtoWorkingon, toggleMmExpand}) {
 
     return(
         <div id="headerframe">
             <div id="mylogo">
-                <img src="/Flag_of_Maryland.svg"></img>
+                <img src="/Flag_of_Maryland.svg" alt="logo"></img>
             </div>
             <div id = "sectionplate">
                 <button id="ambtn" className = "sectionbutton" onClick={switchToAboutPage}>
@@ -19,16 +17,9 @@ function Header({switchToAboutPage, switchtoProjects, switchtoWorkingon}) {
                 <button id="csbtn" className = "sectionbutton" onClick={switchtoWorkingon}>
                     <label className= 'hbtxt'>Coming Soon</label>
                 </button>
-                <div id="hammenu">
-                    <button onClick={expanddropdown} id="hambtn">
-                        <img src="/hamburger.png" />
-                    </button>
-                    <div id="hdrop" className="hdropcontent">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
+                <button id="hhambtn" onClick={toggleMmExpand}>
+                    <img src="hamburger.png" alt="menu"/>
+                </button>
             </div>
         </div>
     );
