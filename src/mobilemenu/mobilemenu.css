@@ -1,23 +1,87 @@
-#mobilemenu.closed {
-    display: none!important;
+#mobilemenu {
+    display: none;
 }
 
 
 
 
 @media (max-width: 768px) {
+#mobilemenu.closed {
+    display: none!important;
+}
+
 #mobilemenu.open {
-    background-color: gray;
-    opacity: 50%;
+    background-color: #2C3531;
+    opacity: 90%;
     height: 100vh;
     width: 200px;
-    position: absolute;
+    position: fixed;
     right: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #mmheader {
-    height: 10vh;
-    background-color: red;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
 }
+
+#mmbtn {
+    height:100%;
+    width:auto;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+#mmbtn img {
+    height: 40px;
+    width: auto;
+}
+
+#mmbtn img:active {
+    transform: translateY(2px);
+}
+
+.mmsecbtn {
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    font-size: 25px;
+    text-wrap: nowrap;
+    color: #d1e8e2;
+}
+
+.mmsecbtn:active {
+    transform: translateY(2px);
+}
+
+#mmlabel {
+    margin-top: 15px;
+    font-size: 30px;
+    color: #d1e8e2;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#mmsocials {
+    margin-top: 20px;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+    justify-content: center;
+}
+
+.mmsclbtn {
+    background-color: transparent;
+    border: none;
+}
+
+
 }

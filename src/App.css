@@ -1,19 +1,24 @@
-body{
+#main{
+  position: fixed;
   background-color: cornsilk;
-  position: static;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden;
-  min-width: auto;
-}
-
-body::-webkit-scrollbar-thumb {
-  display: none;
-}
-
-
-.Section {
+  height: 100vh;
   width: 100vw;
-  height: auto;
+}
+
+#main::-webkit-scrollbar {
+  display: none;
+
+}
+
+
+#Section {
+  padding-top: 80px;
+  height: 100%;
+  overflow-x: scroll;
+}
+
+#Section::-webkit-scrollbar {
+  display: none;
 }

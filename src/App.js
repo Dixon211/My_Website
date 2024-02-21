@@ -34,13 +34,13 @@ function App() {
 
   //html/css
   return (
-    <div>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
+    <div id="main">
       <HangingSidebar/>
-      <Mobilemenu mmexpand={mmexpand}/>
+      <Mobilemenu mmexpand={mmexpand}
+      toggleMmExpand = {toggleMmExpand}
+      switchToAboutPage={handleSwitchToAboutPage}
+      switchtoProjects={handleSwitchToProjects}
+      switchtoWorkingon={handleSwitchtoWork}/>
       <Header 
         toggleMmExpand = {toggleMmExpand}
         switchToAboutPage={handleSwitchToAboutPage}
@@ -48,16 +48,10 @@ function App() {
         switchtoWorkingon={handleSwitchtoWork}
       />
       
-      <div className="Section">
+      <div id="Section">
         {ActivePanel}
       </div>
-      
-    </body>
     </div>
-
-
-  
- 
   );
 }
 

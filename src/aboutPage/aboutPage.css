@@ -1,36 +1,33 @@
 
-.container {
+#aboutcontainer {
         display: flex;
-        flex-direction: row;
-        width: 100vw;
-        overflow-x: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 5vh;
 }
 
 .detailsplate{
-    width: 40vw;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: auto;
 }
 
 .text{
-    margin: auto;
-    width: inherit;
-    width: 600px;
     text-align: center;
+    width: 100%;
 }
 
 .largefont{
     display: block;
-    font-size: 60px;
+    font-size: 5vw;
     white-space: nowrap;
-    text-overflow: hidden;
-    overflow: hidden;
     font-family: "Philospher";
 }
 
 .smalltext{
-    font-size: 24px;
+    font-size: 2.5vw;
     display: block;
     white-space: nowrap;
     font-family: "Philospher";
@@ -38,40 +35,25 @@
 }
 
 .imagesection {
-    width: 50vw;
-    height: 80vh;
+    padding: 1rem;
+    width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
 .mountains{
+    width: 100%;
+    height: auto;
     border-radius: 10%;
     display: block;
     margin: auto;
+    object-fit: cover;
 }
 
 
 
-
-@media (max-width: 1300px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-    .detailsplate{
-        width: 100vw;
-    }
-    .largefont{
-        text-align: center;
-    }
-    .smalltext{
-        text-align: center;
-    }
-    .imagesection{
-        width: 100vw;
-    }
-    }
 
