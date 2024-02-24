@@ -2,6 +2,7 @@ import './App.css';
 import Header from './site_header/header';
 import AboutPage from "./aboutPage/aboutPage";
 import Projects from './projects/projectspage';
+import Project2 from './projectsredux/projects2';
 import Workingon from './workingon/workingon';
 import HangingSidebar from './hangingsidebar/hangingsidebar';
 import Mobilemenu from './mobilemenu/mobilemenu';
@@ -21,7 +22,7 @@ function App() {
   };
 
   const handleSwitchToProjects = () => {
-    setCurrentSection(<Projects />);
+    setCurrentSection(<Project2 />);
   };
 
   const handleSwitchtoWork = () => {
