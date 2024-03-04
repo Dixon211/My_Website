@@ -33,3 +33,9 @@
 .techlist {
     font-size: 24px;
 }
+
+@media (max-width: 768px) {
+    .pdesc{
+        font-size: 24px;
+    }
+}

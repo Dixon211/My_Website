@@ -1,10 +1,10 @@
 import "./mobilemenu.css";
 function Mobilemenu ({mmexpand, toggleMmExpand, switchToAboutPage, switchtoProjects, switchtoWorkingon}) {
     const resumeDownload = () => {
-        const resumeurl= "/MikeDixon.pdf";
+        const resumeurl= "/Mike_Dixon_Resume.pdf";
         const link = document.createElement("a");
         link.href=resumeurl;
-        link.download ="MikeDixon.pdf";
+        link.download ="Mike_Dixon_Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

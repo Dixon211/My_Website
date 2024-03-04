@@ -5,7 +5,7 @@ function Header({switchToAboutPage, switchtoProjects, switchtoWorkingon, toggleM
     return(
         <div id="headerframe">
             <div id="mylogo">
-                <img src="/Flag_of_Maryland.svg" alt="logo"></img>
+                <img src="/Logo_proto.png" alt="logo"></img>
             </div>
             <div id = "sectionplate">
                 <button id="ambtn" className = "sectionbutton" onClick={switchToAboutPage}>

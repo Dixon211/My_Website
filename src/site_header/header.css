@@ -19,13 +19,14 @@
     height:100%;
     border: none;
     background-color: transparent;
-    
+    cursor: pointer;
 }
 
 .hbtxt {
     color: #d1e8e2;
     font-size: 36px;
     text-wrap: nowrap;
+    cursor: pointer;
 }
 
 .sectionbutton:active {
@@ -34,6 +35,7 @@
 
 #mylogo {
     height: 100%;
+    padding-left: 20px;
 }
 
 #mylogo img {

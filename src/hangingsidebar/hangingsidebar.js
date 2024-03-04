@@ -11,10 +11,10 @@ function HangingSidebar () {
     }
     //functions
     const resumeDownload = () => {
-        const resumeurl= "/MikeDixon.pdf";
+        const resumeurl= "/Mike_Dixon_Resume.pdf";
         const link = document.createElement("a");
         link.href=resumeurl;
-        link.download ="MikeDixon.pdf";
+        link.download ="Mike_Dixon_Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -32,7 +32,7 @@ function HangingSidebar () {
                         <img src="/resume.png" />
                     </button>
                 </a>
-                <a className="draweratag" href="mailto:michael.s.dixon211@gmail.com">
+                <a className="draweratag" href="mailto:michaeldixon@michaeldixon.org">
                     <button className="drawerbutton">
                         <img src="/emailicon.png" />
                     </button>
